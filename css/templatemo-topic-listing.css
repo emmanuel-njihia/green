@@ -1145,3 +1145,351 @@ blockquote {
   }
 }
 
+/* General section styling */
+.resource-hub-section {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+  margin-top: 80px; /* To avoid overlap with navbar */
+}
+
+.resource-hub-section h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #333;
+}
+
+.resource-hub-section p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-bar input:focus {
+  border-color: #333;
+}
+
+/* Category Cards */
+.category-card {
+  background-color: #fff;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.category-card h4 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.category-card ul {
+  padding-left: 20px;
+}
+
+.category-card ul li {
+  list-style-type: disc;
+  margin-bottom: 10px;
+}
+
+.category-card ul li a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.2s ease;
+}
+
+.category-card ul li a:hover {
+  color: #0056b3;
+}
+
+/* Add shadow and hover effect */
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .category-card {
+      margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-bar input {
+      width: 90%;
+  }
+}
+
+/* Section padding and styling */
+.community-forum-section {
+  padding: 80px 0; /* Ensures no overlap with navbar */
+  background-color: #f9f9f9; /* Light background for clarity */
+}
+
+.community-forum-section h2, .community-forum-section h4 {
+  color: #333;
+  font-weight: 600;
+}
+
+.community-forum-section p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.forum-categories {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.forum-category-list {
+  list-style: none;
+  padding: 0;
+}
+
+.forum-category-list li {
+  margin-bottom: 15px;
+}
+
+.forum-category-list li a {
+  color: #007bff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forum-category-list li a:hover {
+  color: #0056b3;
+}
+
+.user-contributions, .moderation-info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-contributions p, .moderation-info p {
+  font-size: 1rem;
+  color: #555;
+}
+
+@media (max-width: 992px) {
+  .community-forum-section {
+      padding: 60px 0; /* Reduced padding for smaller screens */
+  }
+
+  .forum-categories, .user-contributions, .moderation-info {
+      margin-bottom: 30px; /* Space between blocks for mobile views */
+  }
+}
+
+.feedback-loop-section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.feedback-loop-section h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.feedback-loop-section p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.feedback-form .form-group label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feedback-form .form-control {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.feedback-form .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.feedback-form button {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.feedback-form button:hover {
+  background-color: #0056b3;
+}
+
+.section-padding {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.feedback-loop-section p.text-center {
+  margin-top: 30px;
+}
+
+@media (min-width: 992px) {
+  .feedback-loop-section {
+      margin-top: 30px; /* Ensures it doesn’t overlap with the navbar */
+  }
+}
+
+/* Base styles */
+.section-padding {
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Section padding and styling */
+.disability-data-section {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.disability-data-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.custom-block {
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-block:hover {
+  transform: translateY(-10px);
+}
+
+.custom-block h5 {
+  color: #007bff;
+  font-size: 1.25rem;
+}
+
+.custom-block p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.custom-block small {
+  font-size: 0.875rem;
+}
+
+.custom-block small a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.custom-block small a:hover {
+  text-decoration: underline;
+}
+
+/* Ensuring no overlap with navbar */
+body {
+  padding-top: 70px; /* Assuming navbar height */
+}
+
+@media (max-width: 768px) {
+  .disability-data-section {
+      padding: 60px 0;
+  }
+  .custom-block {
+      margin-bottom: 20px;
+  }
+}
+.section-padding {
+  padding: 60px 0; /* Ensures spacing above and below the section */
+}
+
+.event-calendar {
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 60px 0; /* Padding to create space around the section */
+}
+
+.event-container {
+  display: flex;
+  flex-direction: column; /* Stacks events vertically */
+  gap: 20px; /* Space between event items */
+}
+
+.event-item {
+  background-color: #fff; /* White background for each event */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside the event item */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.event-item h5 {
+  margin-bottom: 10px; /* Space below the event title */
+  font-size: 1.25rem; /* Font size for the title */
+  color: #333; /* Darker text color */
+}
+
+.event-item p {
+  margin: 5px 0; /* Space above and below the paragraphs */
+  color: #666; /* Medium gray for the text */
+}
+.team-section {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.team-member {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.role {
+  font-style: italic;
+  color: #888;
+}
